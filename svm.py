@@ -29,5 +29,5 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_sta
 svc = SVC(kernel='linear', C=1)
 svc.fit(X_train,y_train)
 
-print("Accuracy on training set(without gridsearch): {:.3f}".format(svc.score(X_train,y_train)))
-print("Accuracy on test set(without gridsearch): {:.3f}".format(svc.score(X_test,y_test)))
+print("Accuracy on training set: {:.3f}".format(svc.score(X_train,y_train)))
+print("Accuracy on test set: {:.3f}".format(svc.score(X_test,y_test)))
